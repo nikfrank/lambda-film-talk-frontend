@@ -19,7 +19,7 @@ class App extends React.Component {
     return (
       <div className="App">
         { loggedIn ? (
-            <img src='https://3k92h7oq73.execute-api.us-west-2.amazonaws.com/test/static?key=five-out2.png' />
+            <img src='https://3k92h7oq73.execute-api.us-west-2.amazonaws.com/test/files?key=five-out2.png' />
         ) : (
             <div>
               <input onChange={this.setPassword} type='password' value={password}/>
