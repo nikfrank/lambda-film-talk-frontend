@@ -7,7 +7,7 @@ class App extends React.Component {
 
   setPassword = e => this.setState({ password: e.target.value })
 
-  login = ()=> fetch('/login', {
+  login = ()=> fetch('/test/login', {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, mode: 'cors',
     body: JSON.stringify({ password: this.state.password})
   })
